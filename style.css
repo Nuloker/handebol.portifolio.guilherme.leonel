@@ -244,10 +244,22 @@ footer {
     /* Ajustes gerais para telas menores */
     body {
         padding: 10px; /* Reduz o padding geral */
-        background-size: cover; /* Faz a imagem cobrir toda a área */
-        background-position: center; /* Centraliza a imagem */
-        background-attachment: fixed; /* Deixa a imagem fixa durante o scroll */
-        background-repeat: no-repeat; /* Impede que a imagem se repita */
+        background-image: none; /* Remove a imagem de fundo do body */
+    }
+
+    body::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background-image: url('IMG-20251107-WA0004.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
     }
 
     /* Ajuste no contêiner do ícone de menu */
