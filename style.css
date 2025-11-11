@@ -245,7 +245,6 @@ footer {
     /* Ajustes gerais para telas menores */
     body {
         padding: 10px; /* Reduz o padding geral */
-        background-attachment: scroll; /* Garante que o fundo role com a página em dispositivos móveis */
     }
 
     /* Ajuste no contêiner do ícone de menu */
