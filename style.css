@@ -265,9 +265,9 @@ footer {
 
     /* Foto de perfil em telas menores */
     .profile-pic {
-        width: 150px; /* Reduz o tamanho da foto */
+        width: 75px; /* Reduz o tamanho da foto */
         height: 150px;
-        border-radius: 50%; /* Torna a foto circular */
+        border-radius: 20px;
     }
 
     /* Ajuste no título principal */
