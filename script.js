@@ -12,6 +12,14 @@ document.addEventListener('DOMContentLoaded', function() {
         mainContent.classList.toggle('shifted');
     });
 
+    // Adiciona um event listener ao conteúdo principal para fechar a barra lateral
+    mainContent.addEventListener('click', () => {
+        if (sidebar.classList.contains('open')) {
+            sidebar.classList.remove('open');
+            mainContent.classList.remove('shifted');
+        }
+    });
+
     /**
      * Mostra uma seção específica e esconde as outras.
      * @param {string} targetId - O ID da seção a ser exibida (ex: '#sobre').
